@@ -7,6 +7,7 @@
 import pandas as pd
 import re
 df =pd.read_csv('reviews_all_pages.csv')
+df = df.drop_duplicates(subset='review')
 
 def nettoyer_texte_complet(texte):
     texte= str(texte).lower()
