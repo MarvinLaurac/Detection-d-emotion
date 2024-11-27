@@ -37,7 +37,7 @@ def convertir_date(date_str):
         return f"{jour.zfill(2)}/{mois_num}/{annee}"
     except Exception as e:
         return date_str
-stop_words = set(['et', 'le', 'la', 'un', 'une', 'de', 'à', 'les', 'des', 'pour', 'dans']) 
+stop_words = set(['et', 'le', 'la', 'un', 'une', 'de', 'à', 'les', 'des', 'pour', 'dans', 'ce','en','on','il','je', 'ils']) 
 df['review'] = df['review'].apply(lambda x: ' '.join([word for word in x.split() if word not in stop_words]))
 df['review']= df['review'].apply(nettoyer_texte_complet)
 df['dates'] =df['dates'].apply(convertir_date)
