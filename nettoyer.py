@@ -15,8 +15,6 @@ def nettoyer_texte_complet(texte):
     texte= re.sub(r'\d+', '', texte)
     texte= re.sub(r'\s+', ' ', texte)
     texte= texte.strip()
-    stop_words = set(['et', 'le', 'la', 'un', 'une', 'de', 'à', 'les', 'des', 'pour', 'dans']) 
-df['review'] = df['review'].apply(lambda x: ' '.join([word for word in x.split() if word not in stop_words]))
     mots= texte.split()
     mots_filtres = [mot for mot in mots if len(mot) > 1]
     texte= ' '.join(mots_filtres)    
@@ -39,7 +37,8 @@ def convertir_date(date_str):
         return f"{jour.zfill(2)}/{mois_num}/{annee}"
     except Exception as e:
         return date_str
-
+stop_words = set(['et', 'le', 'la', 'un', 'une', 'de', 'à', 'les', 'des', 'pour', 'dans']) 
+df['review'] = df['review'].apply(lambda x: ' '.join([word for word in x.split() if word not in stop_words]))
 df['review']= df['review'].apply(nettoyer_texte_complet)
 df['dates'] =df['dates'].apply(convertir_date)
 
