@@ -42,3 +42,6 @@ Le script est organisé en plusieurs sections principales :
 - **Chargement et préparation des données** : Importation des données à partir de fichiers CSV et prétraitement pour l'analyse.
 - **Création de visualisations** : Utilisation de Plotly et Matplotlib pour générer des graphiques interactifs.
 - **Analyse de texte** : Utilisation de TextBlob et WordCloud pour l'analyse de sentiment et la génération de nuages de mots.
+
+
+![image (3)](https://github.com/user-attachments/assets/dfcf55df-0a4c-40e8-9215-7adb1f48eab0)
