@@ -4,9 +4,9 @@
 
 Cette application Streamlit vise à visualiser et analyser les tendances de recherche et l'opinion publique sur le jeu vidéo EA FC 24 (FIFA24). Elle utilise des graphiques interactifs et des analyses de sentiment pour fournir une vue d'ensemble de la réputation en ligne du jeu.
 
-## Application dans le cloud
+## Application 
 
-**Lien** : 
+**Lien** : https://github.com/MarvinLaurac/Detection-d-emotion.git
 
 ## Fonctionnalités
 
@@ -43,5 +43,7 @@ Le script est organisé en plusieurs sections principales :
 - **Création de visualisations** : Utilisation de Plotly et Matplotlib pour générer des graphiques interactifs.
 - **Analyse de texte** : Utilisation de TextBlob et WordCloud pour l'analyse de sentiment et la génération de nuages de mots.
 
+
+## Problème lors du deploiement
 
 ![image (3)](https://github.com/user-attachments/assets/dfcf55df-0a4c-40e8-9215-7adb1f48eab0)
